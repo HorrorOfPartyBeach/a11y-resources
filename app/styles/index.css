@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Space_Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/Space_Mono/Space_Mono/SpaceMono-Bold.ttf') format('ttf'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/Space_Mono/Space_Mono/SpaceMono--regular.woff') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
+  .space-mono {
+    font-family: 'Space_Mono';
+  }
+}
