@@ -1,9 +1,9 @@
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1 className="text-3xl font-bold underline">
+      <h2 className="text-3xl font-bold underline">
         Welcome to Accessibility Resources
-      </h1>
+      </h2>
       <ul>
         <li>
           <a

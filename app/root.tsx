@@ -10,9 +10,13 @@ import {
 import { Header } from './components/Header/Header'
 
 import styles from './styles/tailwind.css'
+import customStyles from './styles/index.css'
 
 export function links() {
-  return [{ rel: 'stylesheet', href: styles }]
+  return [
+    { rel: 'stylesheet', href: styles },
+    { rel: 'stylesheet', href: customStyles },
+  ]
 }
 
 export const meta: MetaFunction = () => ({
@@ -28,7 +32,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-black text-slate-200">
         <Header />
         <Outlet />
         <ScrollRestoration />
