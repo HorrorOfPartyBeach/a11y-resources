@@ -11,6 +11,7 @@ import { Header } from './components/Header/Header'
 
 import styles from './styles/tailwind.css'
 import customStyles from './styles/index.css'
+//import Courses from './routes/courses'
 
 export function links() {
   return [
@@ -25,6 +26,22 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 })
 
+export function ErrorBoundary({ error }: any) {
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body className="m-4">
+        <h1 className="text-2xl">Something went wrong!</h1>
+        <p>{error.message}</p>
+      </body>
+    </html>
+  )
+}
+
 export default function App() {
   return (
     <html lang="en">
@@ -32,7 +49,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-black text-slate-200">
+      <body className="bg-pink-400">
         <Header />
         <Outlet />
         <ScrollRestoration />

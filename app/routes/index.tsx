@@ -1,10 +1,26 @@
+import { Card } from '~/components/Card/Card'
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h2 className="text-3xl font-bold underline">
+    <main
+      className="m-8 h-full"
+      style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}
+    >
+      <h2 className="text-3xl font-bold text-slate-800 underline">
         Welcome to Accessibility Resources
       </h2>
-      <ul>
+      <Card>
+        <div title="Lemon">Lemon is yellow</div>
+        <div title="Strawberry">Strawberry is red</div>
+        <div title="Pear">Pear is green</div>
+      </Card>
+    </main>
+  )
+}
+
+// eslint-disable-next-line no-lone-blocks
+{
+  /* <ul>
         <li>
           <a
             target="_blank"
@@ -28,7 +44,5 @@ export default function Index() {
             Remix Docs
           </a>
         </li>
-      </ul>
-    </div>
-  )
+      </ul> */
 }

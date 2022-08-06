@@ -1,18 +1,31 @@
-@font-face {
+/* @font-face {
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 400;
   src: local('Space Mono'),
     url('./fonts/Space_Mono/Space_Mono/SpaceMono-Bold.ttf') format('ttf'),
     url('./fonts/Space_Mono/Space_Mono/SpaceMono--regular.ttf') format('ttf');
-}
+} */
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  height: 100vh;
 }
 
+// Header Styles
 .header-text {
-  font-family: 'Space Mono';
+  /* font-family: 'Space Mono'; */
   color: black;
+}
+
+// Tabs Styles
+.li {
+  list-style-type: none;
+  float: left;
+}
+
+.active > button {
+  background: red;
+  font-weight: bold;
 }
