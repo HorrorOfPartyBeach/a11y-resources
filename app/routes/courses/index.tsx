@@ -14,7 +14,6 @@ export const loader = async () => {
 
 export default function Courses() {
   const { courses } = useLoaderData() as LoaderData
-  //console.log(courses, 'COURSES')
   return (
     <main>
       <h1>All my courses</h1>
