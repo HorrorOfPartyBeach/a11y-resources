@@ -11,7 +11,7 @@ import { Header } from './components/Header/Header'
 
 import styles from './styles/tailwind.css'
 import customStyles from './styles/index.css'
-//import Courses from './routes/courses'
+import { Footer } from './components/Footer/Footer'
 
 export function links() {
   return [
@@ -55,6 +55,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   )
