@@ -1,9 +1,10 @@
-import { Link } from '@remix-run/react'
+import { Card } from '~/components/Card/Card'
+import { DesignersSvg } from 'app/components/svgs/DesignersSvg'
 
 export default function Index() {
   return (
     <main
-      className="h-full"
+      className="h-min"
       style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}
     >
       <article className="bg-slate-200 text-lg ">
@@ -33,19 +34,27 @@ export default function Index() {
 
       <article className="mx-8 bg-pink-400 pt-10">
         <h2 className="text-3xl font-bold text-slate-800">Resource List</h2>
-        <ul>
-          <Link
-            to="/courses"
-            className="text-sky-900 underline visited:bg-black visited:text-purple-900 hover:bg-slate-900 hover:text-blue-200"
-          >
-            Courses
-          </Link>
-          <li>Articles</li>
-          <li>Blogs</li>
-          <li>Tools</li>
-          <li>Books</li>
-          <li>Accredation</li>
-        </ul>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 2xl:grid-cols-2 ">
+          <Card
+            title="Designers"
+            className="w-full"
+            image={<DesignersSvg />}
+            linkText="Designers"
+            link={'/designers'}
+          />
+          <Card
+            title="Developers"
+            className="w-full"
+            linkText="Developers"
+            link={'/developers'}
+          />
+          <Card
+            title="Testers"
+            className="w-full"
+            linkText="Testers"
+            link={'/qa'}
+          />
+        </div>
       </article>
     </main>
   )
